@@ -1,0 +1,109 @@
+####################################################################################################
+Application Name    :           DVARA
+Version             :           v.0.1
+FrontEnd            :           Angular , Reactnative 
+BackEnd             :           Python,DjangoRestFramework
+Author Name         :           Arun Kumar.R
+Description         :           Dvara documentation
+Created Date        :           14-05-2020
+#####################################################################################################
+
+Tables:
+    1. User                             -   Primary users information(Django User table)
+    2. EmployeeProfile                  -   Employee information
+    3. RecentEvent                      -   Recent events details
+    4. RecentNews                       -   Recent news details
+    5. CustomerStory                    -   Customer Stories  
+    6. Hardware                         -   Hardware technician details
+    7. Software                         -   Software technician details
+    8. Helpdesk                         -   Helpdesk person details
+    9. BoardMember                      -   Boardmembers details
+    10. FinanceTeam                     -   Financeteam details
+
+
+EmployeeProfile:
+    user_id                             -       ForeignKey(User)
+    id                                  -       PrimaryKey
+    employee_profile_image              -       ImageField
+    employee_name                       -       CharField
+    employee_designation                -       CharField
+    entity                              -       CharField
+    blood_group                         -       CharField
+    emergency_contact_number            -       BigIntegerField
+    date_of_joining                     -       DateField
+    team                                -       CharField
+    reporting_manager                   -       CharField
+    landline_number                     -       BigIntegerField
+
+RecentEvent:
+    id                                  -       PrimaryKey
+    event_image                         -       ImageField
+    event_name                          -       CharField
+    event_date                          -       DateField
+    event_place                         -       CharField
+    event_description                   -       CharField
+    event_start_time                    -       TimeField
+    evnet_end_time                      -       TimeField
+
+RecentNews:
+    id                                  -       PrimaryKey
+    news_image                          -       ImageField
+    news_name                           -       CharField
+    news_date                           -       DateField
+    news_description                    -       CharField
+
+CustomerStory:
+    id                                  -       PrimaryKey
+    customer_image                      -       ImageField
+    customer_name                       -       CharField
+    customer_occupation                 -       CharField
+    customer_location                   -       CharField
+    customer_story                      -       CharField
+
+HardwareSupport:
+    id                                  -       PrimaryKey
+    profile_picture                     -       ImageField
+    name                                -       CharField
+    designation                         -       CharField
+    mobile_number                       -       PhonenumberField
+    email                               -       EmailField
+    landline_number                     -       BigIntegerField
+
+softwareSupport:
+    id                                  -       PrimaryKey
+    profile_picture                     -       ImageField
+    name                                -       CharField
+    designation                         -       CharField
+    mobile_number                       -       PhonenumberField
+    email                               -       EmailField
+    landline_number                     -       BigIntegerField
+
+Helpdesk:
+    id                                  -       PrimaryKey
+    profile_picture                     -       ImageField
+    name                                -       CharField
+    designation                         -       CharField
+    mobile_number                       -       PhonenumberField
+    email                               -       EmailField
+    landline_number                     -       BigIntegerField
+
+BoardMembers:
+    id                                  -       PrimaryKey
+    profile_picture                     -       ImageField
+    name                                -       CharField
+    designation                         -       CharField
+
+FinanceTeam:
+    id                                  -       PrimaryKey
+    profile_picture                     -       ImageField
+    name                                -       CharField
+    designation                         -       CharField
+
+Notification:
+    id                                  -       PrimaryKey
+    time                                -       CharField
+    message                             -       CharField
+
+     
+
+
