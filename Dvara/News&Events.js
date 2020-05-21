@@ -10,52 +10,27 @@ export default class Organisation extends components{
 			const windowHeight = Dimensions.get('window').height;
 			<View style={styles.topbar}>
 				<icon name='ios-arrowleft' style={{paddingleft='10'}} />
-				<Text style={{paddingleft='15'}}> organisation </Text>
-				<icon name='ios-search' />
+				<Text style={{paddingleft='15'}}> News & Events </Text>
 			</View>
 			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_Trust')}  >
+				<Touchableobacity onPress={() => this.props.navigation.navigate('Birthdays')}  >
 					<Card style={styles.card} >
 					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
 					</Card>
 				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_Solution')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
-				</Touchableobacity>
-			</View>
-			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_SmartGold')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
-				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_Money')}  >
+				<Touchableobacity onPress={() => this.props.navigation.navigate('Celebrations')}  >
 					<Card style={styles.card} >
 					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
 					</Card>
 				</Touchableobacity>
 			</View>
 			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_KGFS')}  >
+				<Touchableobacity onPress={() => this.props.navigation.navigate('Events')}  >
 					<Card style={styles.card} >
 					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
 					</Card>
 				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_E-Registy')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
-				</Touchableobacity>
-			</View>
-			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_E-Diary')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
-				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('DVARA_Research')}  >
+				<Touchableobacity onPress={() => this.props.navigation.navigate('News')}  >
 					<Card style={styles.card} >
 					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
 					</Card>

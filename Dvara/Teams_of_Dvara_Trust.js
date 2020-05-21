@@ -3,7 +3,7 @@ import { View, Text, Stylesheet, Dimension, Image, } from 'react-native'
 import Icon from 'react-native-vector-icons';
 import { Card } from 'react-native-card-view';
 
-export default Teams_of_Dvara_Trust extends components{
+export default class Teams_of_Dvara_Trust extends components{
 	render{
 		return(
 			const windowWidth = Dimensions.get('window').width;
