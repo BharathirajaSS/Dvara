@@ -1,63 +1,71 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 import { View, Text, Stylesheet, Dimension, Image, } from 'react-native'
 import Icon from 'react-native-vector-icons';
-import { Card } from 'react-native-card-view';
+import CardView from 'react-native-cardview';
 
-export default class Teams_of_Dvara_Trust extends components{
+export default class Teams_of_Dvara_Trust extends Component{
 	render{
 		return(
 			const windowWidth = Dimensions.get('window').width;
 			const windowHeight = Dimensions.get('window').height;
 			<View style={styles.topbar}>
-				<icon name='ios-arrowleft' style={{paddingleft='10'}} />
-				<Text style={{paddingleft='15'}}>Teams_of_Dvara_Trust</Text>
+				<Icon name='ios-arrowleft' style={{paddingleft='10',color:'white'}} />
+				<Text style={{paddingleft='15',color:'white'}}>Teams_of_Dvara_Trust</Text>
 			</View>
 			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('Board_Members')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('Board_Members')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
 				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('IT_Teams')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
-				</Touchableobacity>
-			</View>
-			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('Finace_Team')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
-				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('Facility_Team')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('IT_Teams')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
 				</Touchableobacity>
 			</View>
 			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('HR_Team')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('Finace_Team')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
 				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('Admin')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('Facility_Team')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
 				</Touchableobacity>
 			</View>
 			<View style={styles.cardrow} >
-				<Touchableobacity onPress={() => this.props.navigation.navigate('Communication_Team')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('HR_Team')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
 				</Touchableobacity>
-				<Touchableobacity onPress={() => this.props.navigation.navigate('Branding_Team')}  >
-					<Card style={styles.card} >
-					<Image source={require('./icon_name.png')} style={{justifycontent:'center',alignitems:'center'}} /> 
-					</Card>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('Admin')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
+				</Touchableobacity>
+			</View>
+			<View style={styles.cardrow} >
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('Communication_Team')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
+				</Touchableobacity>
+				<Touchableobacity>	// onPress={() => this.props.navigation.navigate('Branding_Team')}
+					<CardView style={styles.card} >
+					<Image source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}} 
+					style={{justifycontent:'center',alignitems:'center'}} /> 
+					</CardView>
 				</Touchableobacity>
 			</View>
 		)
