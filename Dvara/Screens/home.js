@@ -65,10 +65,20 @@ export default function HomeScreen() {
                               <Image source={require("../assets/home3.jpg")} style={{flex:1,height:null,width:null,resizeMode:'cover',borderRadius:5,borderWidth:1,borderColor:'#dddddd'}}/>
                           </View>
                       </View>
+                      <View style={{marginTop:40}}>
+                          <Text style={styles.headingText}>
+                              Our Mission
+                          </Text>
+                          <View style={{width:width-40,height:150,marginTop:20,marginLeft:20,backgroundColor:'green',borderRadius:6}}>
+                              <Text style={{marginLeft:10,fontSize:18,color:'white',textAlign: 'justify',lineHeight: 30,marginRight:20}} numberOfLines={5} >Our Mission is to ensure that
+                              every individual and every enterprise has complete access to finacial services
+                              </Text>
+                          </View>
+                      </View>
 
 
-                        {/* <View style={{height:150,marginTop:20,marginBottom:20}}>
-                        <Text style={styles.headingText}>Customer Sories</Text>
+                        <View style={{marginTop:40,marginBottom:20}}>
+                        <Text style={styles.headingText}>Customer Stories</Text>
 
                             <ScrollView 
                                 horizontal={true}
@@ -80,7 +90,7 @@ export default function HomeScreen() {
                                 <Category imageUrl={require('../assets/home5.jpg')} name='Dvara Event5' />
                             
                             </ScrollView>
-                        </View> */}
+                        </View>
 
                   </View>
 
