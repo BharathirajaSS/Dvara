@@ -83,11 +83,11 @@ export default function HomeScreen() {
                             <ScrollView 
                                 horizontal={true}
                                 showsHorizontalScrollIndicator={false}>
-                                <Category imageUrl={require('../assets/home6.jpg')} name='Dvara Event1' />
-                                <Category imageUrl={require('../assets/home2.jpg')} name='Dvara Event2' />
-                                <Category imageUrl={require('../assets/home3.jpg')} name='Dvara Event3' />
-                                <Category imageUrl={require('../assets/home4.jpg')} name='Dvara Event4' />
-                                <Category imageUrl={require('../assets/home5.jpg')} name='Dvara Event5' />
+                                <Category imageUrl={require('../assets/home6.jpg')} name='customer Story1' />
+                                <Category imageUrl={require('../assets/home2.jpg')} name='customer Story2' />
+                                <Category imageUrl={require('../assets/home3.jpg')} name='customer Story3' />
+                                <Category imageUrl={require('../assets/home4.jpg')} name='customer Story4' />
+                                <Category imageUrl={require('../assets/home5.jpg')} name='customer Story5' />
                             
                             </ScrollView>
                         </View>
