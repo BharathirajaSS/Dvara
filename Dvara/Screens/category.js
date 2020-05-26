@@ -17,7 +17,9 @@ export default function Category ({imageUrl,name}) {
             </View>
 
             <View style={{flex:1,paddingTop:10,backgroundColor:'lightcyan'}}>
-                <Text style={{marginLeft:5}}>{name}</Text>
+                <Text style={{marginLeft:5,fontSize:16}}>{name}</Text>
+                <Text style={{marginLeft:5,color:'grey',fontSize:12,marginTop:5}}>05 January 2020</Text>
+
             </View>
         </View>
     )
