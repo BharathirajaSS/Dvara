@@ -4,6 +4,7 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 import HomeScreen from './Screens/home.js';
@@ -12,8 +13,61 @@ import HRScreen from './Screens/hr.js';
 import ITScreen from './Screens/it.js';
 import ProfileScreen from './Screens/profile.js';
 
+// View All Screens
+import AllEventsScreen from './Screens/all_events.js';
+import AllNewsScreen from './Screens/all_recent_news.js';
+import AllCustomerStoriesScreen from './Screens/customer_stories.js';
 
+
+const HomeStack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+
+function HomeStackScreen() {
+  return (
+    <HomeStack.Navigator >
+      <HomeStack.Screen name="Home" component={HomeScreen}  
+          options={{
+            headerStyle: {
+              backgroundColor: 'limegreen',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}/>
+      <HomeStack.Screen name="All Events" component={AllEventsScreen} 
+          options={{
+            headerStyle: {
+              backgroundColor: 'limegreen',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+            }}/>
+      <HomeStack.Screen name="All News" component={AllNewsScreen} 
+          options={{
+            headerStyle: {
+                backgroundColor: 'limegreen',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}/>
+      <HomeStack.Screen name="All Customer Stories" component={AllCustomerStoriesScreen} 
+          options={{
+            headerStyle: {
+                backgroundColor: 'limegreen',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}/>
+    </HomeStack.Navigator>
+  );
+}
 
 export default function App() {
   return (
@@ -48,7 +102,7 @@ export default function App() {
         }}
         
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Home" component={HomeStackScreen} />
         <Tab.Screen name="Message" component={MessageScreen} />
         <Tab.Screen name="HR" component={HRScreen} />
         <Tab.Screen name="IT" component={ITScreen} />

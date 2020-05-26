@@ -16,7 +16,7 @@ import Category from '../Screens/category.js';
 
 const { height, width } = Dimensions.get('window')
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
     return (
       <SafeAreaView style={{flex:1}}>
 
@@ -71,7 +71,7 @@ export default function HomeScreen() {
                         </View>
 
                         <View style={styles.inputWrap}>
-                            <Text style={{color:'grey',marginLeft:90,marginTop:10}}>View All</Text>
+                            <Text style={{color:'grey',marginLeft:90,marginTop:10}} onPress={() => navigation.navigate("All Events")}>View All</Text>
                         </View>
                     </View>
                      
@@ -97,7 +97,7 @@ export default function HomeScreen() {
                             </View>
 
                             <View style={styles.inputWrap}>
-                                <Text style={{color:'grey',marginLeft:90,marginTop:10}}>View All</Text>
+                                <Text style={{color:'grey',marginLeft:90,marginTop:10}} onPress={() => navigation.navigate("All Events")}>View All</Text>
                             </View>
 
                         </View>
@@ -132,7 +132,7 @@ export default function HomeScreen() {
                             </View>
 
                             <View style={styles.inputWrap}>
-                                <Text style={{color:'grey',marginLeft:60,marginTop:10}}>View All</Text>
+                                <Text style={{color:'grey',marginLeft:60,marginTop:10}} onPress={() => navigation.navigate('All Customer Stories')}>View All</Text>
                             </View>
                         </View>
 
