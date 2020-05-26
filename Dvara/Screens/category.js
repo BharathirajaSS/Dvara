@@ -10,14 +10,14 @@ import {
 
 export default function Category ({imageUrl,name}) {
     return (
-        <View style={{height:130,width:150,marginTop:20,borderWidth:0.5,borderColor:"#dddddd",borderRadius:4}}>
+        <View style={{height:250,width:250,marginTop:20,borderWidth:0.9,borderColor:"#dddddd",marginLeft:20,borderRadius:10}}>
 
-            <View style={{flex:2,marginLeft:20}}>
+            <View style={{flex:4,borderRadius:60}}>
                 <Image source={imageUrl} style={styles.image}/>
             </View>
 
-            <View style={{flex:1,marginLeft:20,paddingTop:10}}>
-                <Text>{name}</Text>
+            <View style={{flex:1,paddingTop:10,backgroundColor:'lightcyan'}}>
+                <Text style={{marginLeft:5}}>{name}</Text>
             </View>
         </View>
     )
@@ -29,6 +29,6 @@ const styles = StyleSheet.create({
         width:null,
         height:null,
         resizeMode:'cover',
-        borderRadius:5
+        borderRadius:10
     }
 })

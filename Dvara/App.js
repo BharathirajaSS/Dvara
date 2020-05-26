@@ -7,38 +7,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
 import HomeScreen from './Screens/home.js';
+import MessageScreen from './Screens/message.js';
+import HRScreen from './Screens/hr.js';
+import ITScreen from './Screens/it.js';
+import ProfileScreen from './Screens/profile.js';
 
-function MessageScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Message!</Text>
-    </View>
-  );
-}
-
-function HRScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>HR!</Text>
-    </View>
-  );
-}
-
-function ITScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>IT!</Text>
-    </View>
-  );
-}
-
-function ProfileScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile!</Text>
-    </View>
-  );
-}
 
 const Tab = createBottomTabNavigator();
 
@@ -68,10 +41,12 @@ export default function App() {
             return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}
+
         tabBarOptions={{
           activeTintColor: 'tomato',
           inactiveTintColor: 'gray',
         }}
+        
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Message" component={MessageScreen} />
