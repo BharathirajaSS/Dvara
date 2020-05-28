@@ -27,6 +27,7 @@ function HomeStackScreen() {
     <HomeStack.Navigator >
       <HomeStack.Screen name="Home" component={HomeScreen}  
           options={{
+            headerShown: false,
             headerStyle: {
               backgroundColor: 'limegreen',
             },
@@ -39,6 +40,7 @@ function HomeStackScreen() {
           options={{
             headerStyle: {
               backgroundColor: 'limegreen',
+              borderRadius:10
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -49,6 +51,8 @@ function HomeStackScreen() {
           options={{
             headerStyle: {
                 backgroundColor: 'limegreen',
+                borderRadius:10
+
               },
               headerTintColor: '#fff',
               headerTitleStyle: {
@@ -59,6 +63,8 @@ function HomeStackScreen() {
           options={{
             headerStyle: {
                 backgroundColor: 'limegreen',
+                borderRadius:10
+
               },
               headerTintColor: '#fff',
               headerTitleStyle: {

@@ -22,7 +22,47 @@ export default function HomeScreen({navigation}) {
 
         <View style={{flex:1,backgroundColor:'white'}}>
 
-            <View style={styles.home}>
+            {/* <View style={styles.home}>
+                <View style={{flexDirection:'row'}}>
+
+                    <View >
+                        <Text style={{marginTop:80,fontSize:28,marginLeft:30,fontWeight:'bold'}}>Good Morning,</Text>
+                        <Text style={{marginTop:3,fontSize:28,marginLeft:30,fontWeight:'bold'}}>Krishna!</Text>
+                        <Text style={{fontSize:14,marginLeft:30,color:'white',marginTop:3}}>Welcome to Dvara Family</Text>
+                    </View>
+
+                    <View style={{marginTop:80,marginLeft:45}}>
+                        <Image 
+                            source={require('../assets/user.jpg')}
+                            style={{width: 90, height: 90, borderRadius: 90/ 2}} 
+                        /> 
+                    </View>
+
+                </View>
+
+                <View style={{
+                    flexDirection:'row',
+                    padding:10,
+                    backgroundColor:'white',
+                    marginHorizontal:20,
+                    shadowOffset:{width:0,height:0},
+                    shadowOpacity:0.2,
+                    elevation:1,
+                    borderRadius:20,
+                    marginTop:Platform.OS =='android' ? 50 : null 
+                    }}> */}
+                    {/* <Ionicons name="ios-search" size={20} style={{marginRight:20}}/>
+                    <TextInput 
+                        underlineColorAndroid='transparent'
+                        placeholder="Search"
+                        placeholderTextColor='grey'
+                        style={styles.searchTextBox}
+                    />
+                </View>
+            </View> */}
+            
+            <ScrollView scrollEventThrottle={16}>
+                <View style={styles.home}>
                 <View style={{flexDirection:'row'}}>
 
                     <View >
@@ -61,7 +101,6 @@ export default function HomeScreen({navigation}) {
                 </View>
             </View>
             
-            <ScrollView scrollEventThrottle={16}>
 
                 <View style={{flex:1,backgroundColor:'white',paddingTop:20}}>
                     <View style={{flex:1,flexDirection:'row'}}>
